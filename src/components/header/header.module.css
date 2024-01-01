@@ -1,0 +1,38 @@
+.containerHeader {
+  min-height: 13.21rem;
+  background-color: var(--bg-secondary-background);
+  display: flex;
+  flex-direction: column;
+}
+
+.containermenu {
+  border: 1px solid red;
+  height: 3rem;
+}
+
+.containerInfo {
+  height: 10.21rem;
+  display: flex;
+}
+
+.containerText {
+  display: flex;
+  flex-direction: column;
+  min-width: 12.5rem;
+  padding-left: 3rem;
+  gap: .3rem;
+}
+
+.textHi {
+  font-size: 14px;
+}
+
+.textName {
+  font-size: 16px;
+  color: var(--color-text-third);
+}
+
+.textSubTitle {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
