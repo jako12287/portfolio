@@ -6,6 +6,7 @@
   --color-text-third: #f17d3e;
   --color-aux-primary: #f17d3e;
   --color-aux-secondary: #fff;
+  --color-shadows-primary: #c0c0c0;
 }
 * {
   box-sizing: border-box;
@@ -23,8 +24,14 @@ body {
 body {
   background-color: var(--bg-primary-background);
   color: var(--color-text-primary);
+  /* display: flex;
+  flex-direction: column; */
 }
 
+main {
+  /* border: 1px solid red; */
+  min-height: 65vh;
+}
 
 /* body {
   color: rgb(var(--foreground-rgb));

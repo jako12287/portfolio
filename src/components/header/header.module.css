@@ -3,11 +3,16 @@
   background-color: var(--bg-secondary-background);
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid var(--color-shadows-primary);
+  border-radius: 5px;
 }
 
 .containermenu {
-  border: 1px solid red;
   height: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1rem;
 }
 
 .containerInfo {
@@ -19,8 +24,8 @@
   display: flex;
   flex-direction: column;
   min-width: 12.5rem;
-  padding-left: 3rem;
-  gap: .3rem;
+  padding:1rem 0 0 3rem;
+  gap: 0.3rem;
 }
 
 .textHi {
@@ -35,4 +40,18 @@
 .textSubTitle {
   font-size: 11px;
   color: var(--color-text-secondary);
+}
+
+.containerImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
 }
