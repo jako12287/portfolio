@@ -16,7 +16,7 @@ const AppContent = ({ children }: RootLayoutProps) => {
             {children}
         </main>
         <Footer />
-        {open && <SidebarMenu open={open} toggleSidebar={toggleSidebar} />}
+        {open && <SidebarMenu toggleSidebar={toggleSidebar} />}
     </>
 }
 

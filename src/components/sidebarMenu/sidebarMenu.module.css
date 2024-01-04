@@ -7,12 +7,12 @@
 }
 
 .headerMenu {
-  height: 5rem;
+  height: 4.5rem;
   background-color: var(--bg-primary-background);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem 0 2rem;
+  padding: 0 1.2rem 0 2rem;
   color: var(--color-aux-primary);
 }
 
@@ -28,6 +28,7 @@
   justify-content: center;
   gap: 6rem;
   padding: 4rem 0 0 4rem;
+  color: var(--color-text-secondary);
 }
 
 .itemMenu {
@@ -37,5 +38,8 @@
   gap: 3rem;
   font-weight: 600;
   user-select: none;
+}
 
+.itemMenuActive {
+  color: #ffff45;
 }

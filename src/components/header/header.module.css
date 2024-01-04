@@ -5,6 +5,10 @@
   flex-direction: column;
   border-bottom: 1px solid var(--color-shadows-primary);
   border-radius: 5px;
+  background-image: url("../../app/assets/images/Epic1.png");
+  background-repeat: no-repeat;
+  background-position: 150%;
+  background-size: contain;
 }
 
 .containermenu {
@@ -12,40 +16,29 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-right: 1rem;
-}
-
-.containerInfo {
-  height: 10.21rem;
-  display: flex;
+  padding-right: 1.5rem;
 }
 
 .containerText {
   display: flex;
   flex-direction: column;
   min-width: 12.5rem;
-  padding:1rem 0 0 3rem;
+  padding: 1rem 0 0 3rem;
   gap: 0.3rem;
 }
 
 .textHi {
-  font-size: .9rem;
+  font-size: 1.1rem;
 }
 
 .textName {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   color: var(--color-text-third);
 }
 
 .textSubTitle {
-  font-size: .9rem;
+  font-size: 1.1rem;
   color: var(--color-text-secondary);
-}
-
-.containerImage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .image {

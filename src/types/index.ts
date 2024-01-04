@@ -3,7 +3,6 @@ export type RootLayoutProps = {
 };
 
 export type SidebarMenuProps = {
-  open: boolean;
   toggleSidebar: () => void;
 };
 

@@ -9,30 +9,35 @@ const items = [
     {
         id: "001",
         icon: <FiClipboard size={40} color="#f17d3e" />,
-        title: "Acerca de mi"
+        title: "Acerca de mi",
+        route: "/"
     },
     {
         id: "002",
         icon: <FiCodesandbox size={40} color="#f17d3e" />,
-        title: "Proyectos"
+        title: "Proyectos",
+        route: "/projects"
     },
     {
         id: "003",
         icon: <FiMonitor size={40} color="#f17d3e" />,
-        title: "Habilidades"
+        title: "Habilidades",
+        route: "/skills"
     },
     {
         id: "004",
         icon: <GoBook size={40} color="#f17d3e" />,
-        title: "Estudios"
+        title: "Estudios",
+        route: "/studies"
     },
     {
         id: "005",
         icon: <FiPhoneCall size={40} color="#f17d3e" />,
-        title: "Contacto"
+        title: "Contacto",
+        route: "/contact"
     }
 ]
-const SidebarMenu = ({ open, toggleSidebar }: SidebarMenuProps) => {
+const SidebarMenu = ({ toggleSidebar }: SidebarMenuProps) => {
     return <div className={styles.container}>
         <div className={styles.headerMenu}>
             <div className={styles.textName}>
