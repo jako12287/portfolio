@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 5rem;
+  user-select: none;
+}
+
+.sectionIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.containerItems {
+  width: 270px;
+  height: 60px;
+  border: 3px solid var(--color-aux-primary);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textName {
+  font-size: 18px;
+  font-weight: bold;
+  flex: 1;
+}
+
+.containerIcons {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
+}

@@ -1,9 +1,11 @@
+'use client'
 import { SidebarMenuProps } from "@/types";
 import styles from "./sidebarMenu.module.css";
 import { IoClose } from "react-icons/io5";
-import { FiClipboard, FiMonitor, FiPhoneCall, FiThumbsUp } from "react-icons/fi";
+import { FiClipboard, FiMonitor, FiPhoneCall } from "react-icons/fi";
 import { FiCodesandbox } from "react-icons/fi";
 import { GoBook } from "react-icons/go";
+import { useRouter, usePathname } from "next/navigation";
 
 const items = [
     {
@@ -38,6 +40,10 @@ const items = [
     }
 ]
 const SidebarMenu = ({ toggleSidebar }: SidebarMenuProps) => {
+    const router = useRouter()
+    const pat = usePathname()
+    console.log("TCL: SidebarMenu -> pat", pat)
+
     return <div className={styles.container}>
         <div className={styles.headerMenu}>
             <div className={styles.textName}>
@@ -46,7 +52,7 @@ const SidebarMenu = ({ toggleSidebar }: SidebarMenuProps) => {
             <IoClose size="40" onClick={toggleSidebar} />
         </div>
         <div className={styles.bodyMenu}>
-            {items?.map(({ id, title, icon }) => <div key={id} className={styles.itemMenu}>
+            {items?.map(({ id, title, icon, route }) => <div key={id} className={styles.itemMenu} onClick={() => { router.push(route); toggleSidebar() }}>
                 {icon}
                 {title}
             </div>)}
