@@ -6,7 +6,10 @@ import Image from "next/image";
 const Skill = () => {
     return (
         <div className={styles.container}>
-            <CustomTitle title="Habilidades" />
+            <div className={styles.title}>
+
+                <CustomTitle title="Habilidades" />
+            </div>
             <div className={styles.sectionIcons}>
 
                 {dataSkills.map(({ _id, icon, name }) => (
