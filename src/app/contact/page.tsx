@@ -1,3 +1,4 @@
+"use client"
 import { Controller, SubmitHandler, useForm } from "react-hook-form"
 import CustomTitle from "../components/customTitle"
 import { yupResolver } from "@hookform/resolvers/yup"
@@ -16,7 +17,7 @@ type ValuesFormProps = {
 }
 
 const Contact = () => {
-    const { handleSubmit, control } = useForm({ mode: "onChange", errors:{} })
+    const { handleSubmit, control } = useForm({ mode: "onChange", resolver: yupResolver(schema) })
 
     const onSubmit: SubmitHandler<ValuesFormProps> = (values: ValuesFormProps) => {
         console.log(values)
@@ -25,13 +26,35 @@ const Contact = () => {
         <CustomTitle title="Contactame" />
 
         <form onSubmit={handleSubmit(onSubmit)}>
-            <label htmlFor="name">Nombre:</label>
-            <Controller
-                name="name"
-                control={control}
-                render={() => <input id="name" type="text" />}
-            />
+            <div>
 
+                <label htmlFor="name">Nombre:</label>
+                <Controller
+                    name="name"
+                    control={control}
+                    render={({ field }) => <input id="name" type="text" {...field} />}
+                />
+            </div>
+
+            <div>
+
+                <label htmlFor="email">Email:</label>
+                <Controller
+                    name="email"
+                    control={control}
+                    render={({ field }) => <input id="email" type="email" {...field} />}
+                />
+            </div>
+            <div>
+
+                <label htmlFor="message">Mensaje:</label>
+                <Controller
+                    name="message"
+                    control={control}
+                    render={({ field }) => <textarea id="message" {...field} />}
+                />
+            </div>
+            <button>enviar</button>
         </form>
     </div>
 }
