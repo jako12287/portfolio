@@ -1,15 +1,13 @@
-import { FC } from "react"
-import styles from "./btnPrimary.module.css"
+import { FC } from "react";
+import styles from "./btnPrimary.module.css";
 
 type BtnPrimaryProps = {
-    title: string
-}
+    title: string;
+};
 const BtnPrimary: FC<BtnPrimaryProps> = ({ title }) => {
-    return <div className={styles.container}>
-        <div className={styles.btnContainer}>
-            {title}
-        </div>
-    </div>
-}
+    return (
+        <button className={styles.btnContainer}>{title}</button>
+    );
+};
 
-export default BtnPrimary
+export default BtnPrimary;

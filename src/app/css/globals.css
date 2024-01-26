@@ -7,6 +7,8 @@
   --color-aux-primary: #f17d3e;
   --color-aux-secondary: #fff;
   --color-shadows-primary: #c0c0c0;
+  --color-transparent: trasparent;
+  --color-error: #ff004d;
 }
 * {
   box-sizing: border-box;

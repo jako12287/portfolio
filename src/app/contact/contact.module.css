@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 4rem;
+  user-select: none;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 0 1rem;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.input,
+.textArea {
+  border: 1px solid var(--color-aux-secondary);
+  height: 1.8rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-transparent);
+  color: var(--color-aux-secondary);
+  outline: none;
+  padding: 0.5rem;
+}
+.textArea {
+  height: 18rem;
+  resize: none;
+}
+.input:focus,
+.textArea:focus {
+  border: 2px solid var(--color-aux-primary);
+}
+
+.textError {
+  color: var(--color-error);
+  position: absolute;
+  bottom: -20px;
+}
+
+.containerButton {
+  display: flex;
+  justify-content: center;
+}
