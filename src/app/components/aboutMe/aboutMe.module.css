@@ -9,3 +9,8 @@
     font-size: 16px;
     line-height: 2;
 }
+
+.containerBtn{
+    display: flex;
+    justify-content: center;
+}

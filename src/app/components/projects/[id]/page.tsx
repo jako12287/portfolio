@@ -1,4 +1,4 @@
-import CustomTitle from "@/app/components/customTitle"
+import CustomTitle from "@/app/components/share/customTitle"
 import styles from "./projectById.module.css"
 
 

@@ -1,11 +1,11 @@
-import CustomTitle from "@/app/components/customTitle";
+import CustomTitle from "@/app/components/share/customTitle";
 import styles from "./skills.module.css";
 import { dataSkills } from "@/utils";
 import Image from "next/image";
 
 const Skill = () => {
     return (
-        <div className={styles.container}>
+        <section className={styles.container}>
             <div className={styles.title}>
 
                 <CustomTitle title="Habilidades" />
@@ -21,7 +21,7 @@ const Skill = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 

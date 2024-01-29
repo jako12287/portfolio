@@ -1,5 +1,5 @@
 "use client";
-import CustomTitle from "@/app/components/customTitle";
+import CustomTitle from "@/app/components/share/customTitle";
 import Image from "next/image";
 import styles from "./projects.module.css";
 import { useRouter } from "next/navigation";
@@ -8,8 +8,8 @@ import { listProjects } from "@/utils";
 const Projects = () => {
   const router = useRouter();
   return (
-    <div className={styles.container}>
-      <CustomTitle title="Proyectos Desarrollados" />
+    <section className={styles.container}>
+      <CustomTitle title="Proyectos" />
       <div className={styles.containerImages}>
         {listProjects?.map(
           ({ _id, iconImage, title, backgroundColor, route }) => (
@@ -29,7 +29,7 @@ const Projects = () => {
           )
         )}
       </div>
-    </div>
+    </section>
   );
 };
 

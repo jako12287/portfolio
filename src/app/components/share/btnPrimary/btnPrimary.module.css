@@ -6,7 +6,7 @@
   height: 28px;
   border-radius: 20px;
   font-weight: bold;
-  color: var(--color-aux-primary);
+  color: var(--color-aux-secondary);
   display: grid;
   place-content: center;
 }

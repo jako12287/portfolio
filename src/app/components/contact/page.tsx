@@ -1,11 +1,11 @@
 "use client"
 import { Controller, SubmitHandler, useForm } from "react-hook-form"
-import CustomTitle from "../components/customTitle"
+import CustomTitle from "../share/customTitle"
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from "yup"
 import { ErrorMessage } from "@hookform/error-message"
 import styles from "./contact.module.css"
-import BtnPrimary from "../components/btnPrimary"
+import BtnPrimary from "../share/btnPrimary"
 
 const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}$/;
 
@@ -27,8 +27,8 @@ const Contact = () => {
     const onSubmit: SubmitHandler<ValuesFormProps> = (values: ValuesFormProps) => {
         console.log(values)
     }
-    return <div className={styles.container}>
-        <CustomTitle title="Contactame" />
+    return <section className={styles.container}>
+        <CustomTitle title="Contáctame" />
 
         <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
             <div className={styles.formGroup}>
@@ -82,7 +82,7 @@ const Contact = () => {
                 <BtnPrimary title="Enviar" />
             </div>
         </form>
-    </div>
+    </section>
 }
 
 
