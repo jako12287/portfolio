@@ -2,6 +2,7 @@
   width: 100%;
   height: 100vh;
   position: relative;
+  user-select: none;
 }
 
 .imageHero {
@@ -18,22 +19,59 @@
   background-color: #00000090;
   position: absolute;
   display: flex;
+  flex-direction: column;
 }
 
 .textHero {
   font-size: 10rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  overflow: visible;
-  white-space: nowrap;
-  animation: textmate 5000s linear infinite;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* overflow: visible; */
+  /* white-space: nowrap; */
   align-self: flex-end;
+  width: 100%;
+  text-align: end;
+  padding-right: 2.5rem;
 }
 
-@keyframes textmate {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+.infoContainer {
+  flex: 1;
+}
+
+.listMenu {
+  display: flex;
+  gap: 5rem;
+  justify-content: flex-end;
+  text-decoration: none;
+  list-style-type: none;
+  padding-top: 2.5rem;
+  padding-right: 2.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.listMenu li {
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+}
+
+.listMenu li:hover {
+  color: var(--color-text-third);
+  transition: color 0.5s ease-in-out;
+}
+
+.containerSubtitle {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2.5rem;
+  gap: 2rem;
+}
+
+
+
+.nameContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
 }

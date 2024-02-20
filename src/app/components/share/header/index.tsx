@@ -10,55 +10,32 @@ const Header = () => {
         className={styles.imageHero}
       />
       <div className={styles.dataContainer}>
+
+        <div className={styles.infoContainer}>
+        <ul className={styles.listMenu}>
+          <li>Sobre mi</li>
+          <li>Mi experiencia</li>
+          <li>Proyectos</li>
+          <li>Contactame</li>
+        </ul>
+        </div>
+        <div className={styles.containerSubtitle}>
+        <h4>
+          Freelance 
+        </h4>
+        <h4>
+          Desarrollador web full stack 
+        </h4>
+
+        </div>
+
+        <div className={styles.nameContainer}>
+
         <h1 className={styles.textHero}>
-          {" "}
-          Johan Cortes - Johan Cortes - Johan Cortes - Johan CortesJohan Cortes
-          - Johan Cortes - Johan Cortes - Johan CortesJohan Cortes - Johan
-          Cortes - Johan Cortes - Johan CortesJohan Cortes - Johan Cortes -
-          Johan Cortes - Johan CortesJohan Cortes - Johan Cortes - Johan Cortes
-          - Johan CortesJohan Cortes - Johan Cortes - Johan Cortes - Johan
-          CortesJohan Cortes - Johan Cortes - Johan Cortes - Johan CortesJohan
-          Cortes - Johan Cortes - Johan Cortes - Johan CortesJohan Cortes -
-          Johan Cortes - Johan Cortes - Johan CortesJohan Cortes - Johan Cortes
-          - Johan Cortes - Johan CortesJohan Cortes - Johan Cortes - Johan
-          Cortes - Johan CortesJohan Cortes - Johan Cortes - Johan Cortes -
-          Johan CortesJohan Cortes - Johan Cortes - Johan Cortes - Johan
-          CortesJohan Cortes - Johan Cortes - Johan Cortes - Johan CortesJohan
-          Cortes - Johan Cortes - Johan Cortes - Johan CortesJohan Cortes -
-          Johan Cortes - Johan Cortes - Johan CortesJohan Cortes - Johan Cortes
-          - Johan Cortes - Johan CortesJohan Cortes - Johan Cortes - Johan
-          Cortes - Johan CortesJohan Cortes - Johan Cortes - Johan Cortes -
-          Johan CortesJohan Cortes - Johan Cortes - Johan Cortes - Johan
-          CortesJohan Cortes - Johan Cortes - Johan Cortes - Johan CortesJohan
-          Cortes - Johan Cortes - Johan Cortes - Johan CortesJohan Cortes -
-          Johan Cortes - Johan Cortes - Johan CortesJohan Cortes - Johan Cortes
-          - Johan Cortes - Johan CortesJohan Cortes - Johan Cortes - Johan
-          Cortes - Johan CortesJohan Cortes - Johan Cortes - Johan Cortes -
-          Johan CortesJohan Cortes - Johan Cortes - Johan Cortes - Johan
-          CortesJohan Cortes - Johan Cortes - Johan Cortes - Johan CortesJohan
-          Cortes - Johan Cortes - Johan Cortes - Johan CortesJohan Cortes -
-          Johan Cortes - Johan Cortes - Johan CortesJohan Cortes - Johan Cortes
-          - Johan Cortes - Johan CortesJohan Cortes - Johan Cortes - Johan
-          Cortes - Johan CortesJohan Cortes - Johan Cortes - Johan Cortes -
-          Johan CortesJohan Cortes - Johan Cortes - Johan Cortes - Johan
-          CortesJohan Cortes - Johan Cortes - Johan Cortes - Johan CortesJohan
-          Cortes - Johan Cortes - Johan Cortes - Johan CortesJohan Cortes -
-          Johan Cortes - Johan Cortes - Johan CortesJohan Cortes - Johan Cortes
-          - Johan Cortes - Johan CortesJohan Cortes - Johan Cortes - Johan
-          Cortes - Johan CortesJohan Cortes - Johan Cortes - Johan Cortes -
-          Johan CortesJohan Cortes - Johan Cortes - Johan Cortes - Johan
-          CortesJohan Cortes - Johan Cortes - Johan Cortes - Johan CortesJohan
-          Cortes - Johan Cortes - Johan Cortes - Johan CortesJohan Cortes -
-          Johan Cortes - Johan Cortes - Johan CortesJohan Cortes - Johan Cortes
-          - Johan Cortes - Johan CortesJohan Cortes - Johan Cortes - Johan
-          Cortes - Johan CortesJohan Cortes - Johan Cortes - Johan Cortes -
-          Johan CortesJohan Cortes - Johan Cortes - Johan Cortes - Johan
-          CortesJohan Cortes - Johan Cortes - Johan Cortes - Johan CortesJohan
-          Cortes - Johan Cortes - Johan Cortes - Johan CortesJohan Cortes -
-          Johan Cortes - Johan Cortes - Johan CortesJohan Cortes - Johan Cortes
-          - Johan Cortes - Johan CortesJohan Cortes - Johan Cortes - Johan
-          Cortes - Johan Cortes{" "}
+          Johan Cortes
         </h1>
+        </div>
+
       </div>
     </section>
   );
